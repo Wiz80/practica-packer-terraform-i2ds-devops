@@ -18,7 +18,8 @@
 
   "provisioners": [{
     "type": "ansible",
-    "playbook_file": "../ansible/update_ubuntu.yaml"
+    "playbook_file": "../ansible/update_ubuntu.yaml",
+    "extra_arguments": [ "--ssh-extra-args='-o HostKeyAlgorithms=ecdsa-ssh-rsa'" ]
   }]
 
 }
